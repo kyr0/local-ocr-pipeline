@@ -20,8 +20,8 @@ interface PageResult {
 
 class OllamaManager {
   ollamaHost = process.env.OLLAMA_HOST || 'http://localhost:11434';
-  ocrModel = 'glm-ocr';
-  jsonModel = 'qwen3:1.7b-q4_K_M';
+  ocrModel = process.env.OCR_MODEL || 'glm-ocr';
+  jsonModel = process.env.JSON_MODEL || 'qwen3:1.7b-q4_K_M';
 
   async checkOllamaInstalled(): Promise<boolean> {
     try {
