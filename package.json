@@ -1,0 +1,23 @@
+{
+  "name": "ocr-pipeline",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/ocr-pipeline.js",
+  "bin": {
+    "ocr-pipeline": "./dist/ocr-pipeline.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/ocr-pipeline.ts",
+    "test": "tsx src/ocr-pipeline.ts --input test.pdf --seller-address 'Test Address' --seller-tax-no '123456789'"
+  },
+  "dependencies": {
+    "jimp": "^0.16.1",
+    "pdf-to-img": "^5.0.0"
+  },
+ "devDependencies": {
+     "@types/node": "^20.11.0",
+     "tsx": "^4.6.0",
+     "typescript": "^5.3.3"
+   }
+ }
