@@ -47,4 +47,4 @@ fi
 echo "Installing dependencies..."
 pnpm install
 
-echo "Build complete!"
+echo "Setup complete!"
