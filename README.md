@@ -8,7 +8,7 @@ Prereqs:
 
 macOS/Linux:
 ```bash
-./setup.sh
+sudo ./setup.sh
 ```
 
 Windows:
@@ -31,5 +31,5 @@ pnpm start -- --input test.pdf --seller-address "Test Address" --seller-tax-no "
 ## Run with Ollama Host
 
 ```bash
-OLLAMA_HOST=http://baradcuda:11435 OCR_MODEL=glm-ocr-64k JSON_MODEL=qwen3:1.7b-q4_K_M pnpm start -- --input test.pdf --seller-address "Test Address" --seller-tax-no "123456789"
+OLLAMA_HOST=http://127.0.0.1:11434 OCR_MODEL=glm-ocr-64k JSON_MODEL=qwen3:1.7b-q4_K_M pnpm start -- --input test.pdf --seller-address "Test Address" --seller-tax-no "123456789"
 ```
